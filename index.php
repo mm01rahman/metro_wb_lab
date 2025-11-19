@@ -40,6 +40,7 @@ $router->get('/test-mail', fn() => $dash->testMail());
 
 $router->get('/posts', fn() => $posts->index());
 $router->post('/posts', fn() => $posts->create());
+$router->post('/posts/update', fn() => $posts->update());
 $router->get('/api/posts', fn() => $posts->getPosts());
 
 $router->post('/register', fn() => $auth->register());
